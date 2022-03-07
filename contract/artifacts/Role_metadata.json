@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getOwnRole",
+				"outputs": [
+					{
+						"internalType": "enum Role.ROLE",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "getRoleByAddress",
+				"outputs": [
+					{
+						"internalType": "enum Role.ROLE",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setAgent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setDelegation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setOther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "role",
+						"type": "uint8"
+					}
+				],
+				"name": "setStaff",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setVisitor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/Role.sol": "Role"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/Role.sol": {
+			"keccak256": "0x4c683bf724e15edaddf7bb894a699f3e88a5406765362c4b71930e3caf4e13da",
+			"urls": [
+				"bzz-raw://e9422225e423f7011267c87a767f4e66235ec418858a69cd4b04bcacac36d805",
+				"dweb:/ipfs/QmPovFJMA4jdx694G5FQ6Kf5kS3Ukh1TMn9F1vyCSiS5Dp"
+			]
+		}
+	},
+	"version": 1
+}

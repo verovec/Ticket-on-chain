@@ -1,0 +1,375 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_contest",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_maxTickets",
+						"type": "uint256"
+					}
+				],
+				"name": "addEvent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "date",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxTickets",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "sellsTickets",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "validateTickets",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct OlympicEvent.OlympicEventStruct",
+						"name": "tmpOlympicEvent",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "addOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_contest",
+						"type": "string"
+					}
+				],
+				"name": "checkEventExists",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "deleteOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_contest",
+						"type": "string"
+					}
+				],
+				"name": "getEvent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "date",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxTickets",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "sellsTickets",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "validateTickets",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct OlympicEvent.OlympicEventStruct",
+						"name": "olympicEvent",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwnRole",
+				"outputs": [
+					{
+						"internalType": "enum Role.ROLE",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "getRoleByAddress",
+				"outputs": [
+					{
+						"internalType": "enum Role.ROLE",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_contest",
+						"type": "string"
+					}
+				],
+				"name": "removeEvent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_contest",
+						"type": "string"
+					}
+				],
+				"name": "selledTicketEvent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setAgent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setDelegation",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setOther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "role",
+						"type": "uint8"
+					}
+				],
+				"name": "setStaff",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_publicKey",
+						"type": "address"
+					}
+				],
+				"name": "setVisitor",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_pubKey",
+						"type": "address"
+					}
+				],
+				"name": "setWalletDestination",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/OlympicEvent.sol": "OlympicEvent"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/OlympicEvent.sol": {
+			"keccak256": "0x153e9fbd792028f43a79dce1c0d315ac3a3abc75ef0adc14f7495a3f333bf60d",
+			"urls": [
+				"bzz-raw://3d6d6a7038008e9fde3a9b84b9da3b78eb40054479c9ded08ceb076aa0a71753",
+				"dweb:/ipfs/QmafWvEZV2seqXXEoYMT2JttF2ma1qK9WjMmCwJW5zTdir"
+			]
+		},
+		"contract/Ownable.sol": {
+			"keccak256": "0x56311046f68bda37b45d30cc5e6fa84375488b6289f61f9b33f72430f7b9fe26",
+			"urls": [
+				"bzz-raw://0d5e0478d0830fcda6b8b45c4fcc413e66c0e1cf6cb5910c15b233cc4383ee17",
+				"dweb:/ipfs/QmTaWAM8He7SrAuWzsTytbZfSLoZbTKeJjq1P8R1EJ5W5G"
+			]
+		},
+		"contract/Role.sol": {
+			"keccak256": "0xb837795e28c2556d39e42351c47099118b9dc43eb4a8fcad9089c8beb4c84340",
+			"urls": [
+				"bzz-raw://ed5fabfa75fbeeee604a1ccab69de17ef54489156b6b5766144f7ab6ff2b25e2",
+				"dweb:/ipfs/QmQ6xer95Meg1itCnCWFkxyYDDgQ34iuwoq17kNgDHR5yz"
+			]
+		}
+	},
+	"version": 1
+}
